@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(14, 131, 14);
+    width: 80vw;
+    a {
+    color: black;
+    }
+
+}
+
+h1 {        
+    color: rgb(61, 25, 25);
+    
+}
+
+/* Useampi elementti saa saman tyylin */
+h1, h2, h3 {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+} 
+
+/* ox, % yms kirjoitetaan suoraan luvun perään */
+p {
+    color: rgb(75, 61, 61);
+    font-size: 18px;
+}
+
+/* class selektori */
+.esittely {
+    color: rgb(141, 67, 18);
+    font-size: 1.3rem; /* 1.3 kertaa oletusfontin koko */
+    font-style: italic;
+}
+
+/* jos href alkaa https ^ jos loppuu $ */
+a[href^="https"] {
+    color: black;
+}
+
+
+
+
+
+
+
+
