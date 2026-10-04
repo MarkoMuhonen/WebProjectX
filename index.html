@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 
 <head>
     <meta charset="UTF-8">
@@ -9,63 +9,98 @@
 </head>
 
 <body>
+    <!-- Koko sivun container, kaikki tämän sisällä -->
+    <div class="container">
 
-    <header>
-        <h1>Kinnulan riistanhoitoyhdistys</h1>
-        <figure>
-            <img src="Kuvat/etusivu-banneri.svg" alt="Etusivun bannerikuva metsää">
-           
-        </figure>
-        <nav>
-            <a href="ajankohtaista.html">Ajankohtaista -</a>
-            <a href="ampumaradat.html">Ampumaradat -</a>
-            <a href="simulaattori.html">Ammuntasimulaattori -</a>
-            <a href="esittely.html">Esittely -</a>
+        <!-- Header -->
+        <header class="header">
+            <h1>Kinnulan riistanhoitoyhdistys</h1>
+            <figure>
+                <img src="Kuvat/etusivu-banneri.svg" alt="Etusivun bannerikuva metsää">
+
+            </figure>
+        </header>
+
+        <!-- Navigaatio osio -->
+        <nav class="nav">
+            <a href="ajankohtaista.html">Ajankohtaista  - </a>
+            <a href="ampumaradat.html">Ampumaradat  - </a>
+            <a href="simulaattori.html">Ammuntasimulaattori  - </a>
+            <a href="esittely.html">Esittely  - </a> 
             <a href="yhteystiedot.html">Yhteystiedot</a>
         </nav>
-    </header>
 
-    <!--kappale kuuluu esittely-luokkaan-->
-    <p class="esittely">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore inventore quam, est, fugiat
-        dolor exercitationem eaque, placeat ad obcaecati numquam dicta ea iure cumque dignissimos iste corrupti maiores
-        excepturi voluptate.</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel dolorum perferendis rerum aut qui esse soluta est
-        pariatur ex! Earum accusamus quae possimus natus atque nobis reprehenderit doloremque fugiat impedit.</p>
+        <!--kappale kuuluu esittely-luokkaan
 
-    <!-- Varsinainen sisältö alkaa -->
+         <p class="esittely">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore inventore quam, est,
+            fugiat */
+            dolor exercitationem eaque, placeat ad obcaecati numquam dicta ea iure cumque dignissimos iste corrupti
+            maiores
+            excepturi voluptate.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel dolorum perferendis rerum aut qui esse soluta
+            est
+            pariatur ex! Earum accusamus quae possimus natus atque nobis reprehenderit doloremque fugiat impedit.</p>
+        */
 
-    <main>
-        <article>
-            <section>
-                <h2>Ajankohtaista</h2>
+        <!-- Varsinainen sisältö alkaa -->
 
-                <p class="uutinen">Harjoitusammunnat</p>
-                <p class="uutinen">Metsästäjätutkinto</p>
-                <p class="uutinen">Ampumakoe</p>
-            </section>
+        <main class="main">
+            <h2>Uusimmat tiedotteet</h2>
+
+            <!-- Tiedotteiden container -->
+            <div class="article-grid">
+                <article class="card">
+
+                    <h3>Harjoitusammunnat</h3>
+
+                    <p>Torstaina 12.10. klo 18 harjoitusammunnat hirviradalla. Nämä ovat viimeiset harjoitukset
+                        ennen hirvenmetsästyksen aloitusta.</p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>Valkohäntäpeurakannat taantuneet</h3>
+
+                    <p>Valkohäntäpeurojen kannat ovat taantuneet alueellamme. Metsästyksessä suositellaan harkintaa, ja
+                        pyyntiä suositellaan kohdistettavaksi nuoriin uroksiin.</p>
+                    <p><a href="https://riista.fi">Lisätietoja: Riistakeskus</a></p>
+                </article>
+                
+                <article class="card">
+
+                    <h3>Seurojen välisten hirvimestaruuskisojen tulokset</h3>
+
+                    <ol>
+                        <li>Kyrsänmäen eränkävijät</li>
+                        <li>Jeäpitteän erä</li>
+                        <li>Jermuan hirvi</li>
+                    </ol>
+                    
+                </article>
+            </div>
+        </main>
+
+        <!-- Sivupalkki -->
+        <!-- Mietitään vielä onko tälle käyttöä sivustolla 
+    <aside class="sidebar">
+        <h2 id="uutisia">Uutisia</h2>
+        <p>sivupalkkijuttua</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam dolorum obcaecati et eius quidem
+            quasi,
+            minima ex non, eligendi libero eaque cumque itaque facere accusamus ut in aliquid temporibus.
+            Itaque.
+        </p>
+    </aside> 
+    -->
 
 
-            <section class="yhteystiedot">
-                <h2 id="tiedot">Yhteystiedot</h2>
-                <p>TÄhänosoite katu 12, 43900 KINNULA</p>
-                <p>asd@asd.fi</p>
-                <p><a href="https://riista.fi">Riistakeskus</a></p>
-            
-            </section>
-            
-        </article>
-        <aside>
-            <h2 id="uutisia">Uutisia</h2>
-            <p>sivupalkkijuttua</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam dolorum obcaecati et eius quidem quasi,
-                minima ex non, eligendi libero eaque cumque itaque facere accusamus ut in aliquid temporibus. Itaque.
-            </p>
-        </aside>
 
-    </main>
-    <footer>
-        <p>&copy; 2026 Kinnulan riistanhoitoyhdistys</p>
-    </footer>
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Kinnulan riistanhoitoyhdistys</p>
+        </footer>
+    </div>
 </body>
 
 </html>
