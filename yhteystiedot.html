@@ -1,45 +1,75 @@
 <!DOCTYPE html>
 <html lang="fi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yhteystiedot</title>
-     <link rel="stylesheet" href="CSS/common-css.css">
+    <title>Kinnulan riistanhoitoyhdistys</title>
+    <link rel="stylesheet" href="CSS/common-css.css">
 </head>
-<body>
 
-    <header>
-        <h1>Kinnulan riistanhoitoyhdistys</h1>
-        <figure>
-            <img src="Kuvat/etusivu-banneri.svg" alt="Etusivun bannerikuva metsää">
-           
-        </figure>
-        <nav>
-            <a href="index.html">Pääsivu -</a>
-            <a href="ampumaradat.html">Ampumaradat -</a>
-            <a href="simulaattori.html">Ammuntasimulaattori -</a>
-            <a href="esittely.html">Esittely -</a>
+<body>
+    <!-- Koko sivun container, kaikki tämän sisällä -->
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <h1>Kinnulan riistanhoitoyhdistys</h1>
+            <figure>
+                <img src="Kuvat/etusivu-banneri.svg" alt="Etusivun bannerikuva metsää">
+
+            </figure>
+        </header>
+
+        <!-- Navigaatio osio -->
+        <nav class="nav">
+            <a href="index.html">Etusivu </a>
+            <a href="ajankohtaista.html">Ajankohtaista</a>
+            <a href="ampumaradat.html">Ampumaradat</a>
+            <a href="simulaattori.html">Ammuntasimulaattori</a>
             <a href="yhteystiedot.html">Yhteystiedot</a>
         </nav>
-    </header>
 
-    <!--kappale kuuluu esittely-luokkaan-->
-    <p class="esittely">Loredsdfsdfsdfsdf.</p>
-    <p>Lorem, ipsum dolor sit amet csdfsdfsdfsus atque nobis reprehenderit doloremque fugiat impedit.</p>
+            <!-- Varsinainen sisältö alkaa -->
 
-    <!-- Varsinainen sisältö alkaa -->
+        <main class="main">
+            <h2>Yhteystiedot</h2>
 
-    <main>
-        <article>
-            <section>
-                <h2>Yhteystiedot</h2>
+            <!-- Yhteystiedot -->
+            <div class="article-grid">
+                <article class="card">
 
-            </section>
+                    <h3>Kinnulan riistanhoitoyhdistys</h3>
+                    <dl class="contact-list">
+                        <dt>Puhelin</dt>
+                        <dd><a href="tel:+358401234567">040 123 4567</a></dd>
+                        <dt>Sähköposti</dt>
+                        <dd><a href="mailto:kinnula@rhy.riista.fi">kinnula@rhy.riista.fi</a></dd>
+                    </dl>
+                </article>
+            </div>
+        </main>
 
-    </main>
-    <footer>
-        <p>&copy; 2026 Kinnulan riistanhoitoyhdistys</p>
-    </footer>
+        <!-- Sivupalkki -->
+        <!-- Mietitään vielä onko tälle käyttöä sivustolla 
+    <aside class="sidebar">
+        <h2 id="uutisia">Uutisia</h2>
+        <p>sivupalkkijuttua</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam dolorum obcaecati et eius quidem
+            quasi,
+            minima ex non, eligendi libero eaque cumque itaque facere accusamus ut in aliquid temporibus.
+            Itaque.
+        </p>
+    </aside> 
+    -->
+
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Kinnulan riistanhoitoyhdistys</p>
+        </footer>
+    </div>
 </body>
 
 </html>

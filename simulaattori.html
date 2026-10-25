@@ -1,47 +1,127 @@
 <!DOCTYPE html>
 <html lang="fi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulaattori</title>
-     <link rel="stylesheet" href="CSS/common-css.css">
+    <title>Kinnulan riistanhoitoyhdistys</title>
+    <link rel="stylesheet" href="CSS/common-css.css">
 </head>
+
 <body>
-    <header>
-        <h1>Kinnulan riistanhoitoyhdistys</h1>
-        <figure>
-            <img src="Kuvat/etusivu-banneri.svg" alt="Etusivun bannerikuva metsää">
-           
-        </figure>
-        <nav>
-            <a href="index.html">Pääsivu -</a>
-            <a href="ampumaradat.html">Ampumaradat -</a>
-            <a href="simulaattori.html">Ammuntasimulaattori -</a>
-            <a href="esittely.html">Esittely -</a>
+    <!-- Koko sivun container, kaikki tämän sisällä -->
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <h1>Kinnulan riistanhoitoyhdistys</h1>
+            <figure>
+                <img src="Kuvat/etusivu-banneri.svg" alt="Etusivun bannerikuva metsää">
+
+            </figure>
+        </header>
+
+        <!-- Navigaatio osio -->
+        <nav class="nav">
+            <a href="index.html">Etusivu </a>
+            <a href="ajankohtaista.html">Ajankohtaista</a>
+            <a href="ampumaradat.html">Ampumaradat</a>
             <a href="yhteystiedot.html">Yhteystiedot</a>
         </nav>
-    </header>
 
-    <!--kappale kuuluu esittely-luokkaan-->
-    <p class="esittely">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore inventore quam, est, fugiat
-        dolor exercitationem eaque, placeat ad obcaecati numquam dicta ea iure cumque dignissimos iste corrupti maiores
-        excepturi voluptate.</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel dolorum perferendis rerum aut qui esse soluta est
-        pariatur ex! Earum accusamus quae possimus natus atque nobis reprehenderit doloremque fugiat impedit.</p>
+        <!-- Varsinainen sisältö alkaa -->
 
-    <!-- Varsinainen sisältö alkaa -->
+        <main class="main">
+            <h2>Ampumasimulaattori</h2>
 
-    <main>
-        <article>
-            <section>
-                <h2>Ammuntasimulaattori</h2>
+            <!-- Tiedotteiden container -->
+            <div class="article-grid">
+                <article class="card">
 
-            </section>
+                    <h3>Yleistä simulaattorista</h3>
 
-    </main>
-    <footer>
-        <p>&copy; 2026 Kinnulan riistanhoitoyhdistys</p>
-    </footer>
+                    <p>SimWay ampumasimulaattori on tietokoneavusteinen harjoittelujärjestelmä,
+                        jolla voidaan harjoitella ampumista turvallisesti sisätiloissa ilman
+                        oikeita patruunoita. Tavallisesti käytetään oikean aseen kaltaisia aseita,
+                        jotka käyttävät laservaloa osuman havaitsemiseen. Järjestelmä käyttää
+                        myös aitoihin aseisiin kiinnitettäviä sensoreita tai harjoitusaseita,
+                        ja ampuja tähtää valkokankaalle tai näytölle projisoituihin kohteisiin.
+                        Simulaattori soveltuu esimerkiksi metsästys-,
+                        urheilu- ja viranomaiskoulutukseen sekä ampumatekniikan harjoitteluun.</p>
+                </article>
+
+                <article class="card">
+
+                    <h3>Simulaattorin käyttöohje</h3>
+
+                    <p>Tähän käyttöohjetta tarkemmin. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Modi velit temporibus aperiam
+                        autem, aspernatur ipsam corrupti. Velit placeat libero, ad
+                        ipsum ex eum,
+                        qui quisquam assumenda illo architecto mollitia id?</p>
+                </article>
+
+                <article class="card">
+
+                    <h3>Simulaattorin käyttöohje</h3>
+
+                    <p>Tähän käyttöohjetta tarkemmin.</p>
+                </article>
+                <article class="card">
+
+                    <h3>Oman kiväärin käyttö simulaattorissa</h3>
+
+                    <p>Tähän ohjetta miten laserpatruunaa käytetään
+                        omassa kiväärissä. Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Nam explicabo ipsum voluptate delectus, fugit
+                        , quo veritatis quae soluta quidem eaque voluptatem libero labore
+                        quasi repudiandae, illo ducimus quam velit odit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Accusamus quaerat voluptatum repellendus eligendi sunt
+                        amet libero maxime dolore tempora quasi quis atque iusto consequuntur
+                        , porro perspiciatis totam quo iure pariatur.
+                    </p>
+                </article>
+                <article class="card">
+
+                    <h3>Oman haulikon käyttö simulaattorissa</h3>
+
+                    <p>Tähän ohjetta miten laserosoitinta ja liipasintunnistinta käytetään
+                        omassa haulikossa. Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Nam explicabo ipsum voluptate delectus, fugit
+                        , quo veritatis quae soluta quidem eaque voluptatem libero labore
+                        quasi repudiandae, illo ducimus quam velit odit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Accusamus quaerat voluptatum repellendus eligendi sunt
+                        amet libero maxime dolore tempora quasi quis atque iusto consequuntur
+                        , porro perspiciatis totam quo iure pariatur.
+                    </p>
+                </article>
+
+
+            </div>
+        </main>
+
+        <!-- Sivupalkki -->
+        <!-- Mietitään vielä onko tälle käyttöä sivustolla 
+    <aside class="sidebar">
+        <h2 id="uutisia">Uutisia</h2>
+        <p>sivupalkkijuttua</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam dolorum obcaecati et eius quidem
+            quasi,
+            minima ex non, eligendi libero eaque cumque itaque facere accusamus ut in aliquid temporibus.
+            Itaque.
+        </p>
+    </aside> 
+    -->
+
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Kinnulan riistanhoitoyhdistys</p>
+        </footer>
+    </div>
 </body>
 
 </html>

@@ -9,16 +9,15 @@ body {
     /* background-color: rgb(14, 131, 14); */
     background-color: rgb(238, 241, 234);
     width: 100%;
-
     a {
         color: rgb(29, 28, 28);
+        text-decoration: none;
     }
 }
 
 /******************************************
 KOKO SIVUN GRID (KAIKKI SIVUT)
 *******************************************/
-
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -27,11 +26,18 @@ KOKO SIVUN GRID (KAIKKI SIVUT)
         "nav"
         "main"
         "footer";
+    grid-template-rows:
+    auto
+    auto
+    1fr
+    auto;
+    
+    min-height: 20vh;
     gap: 20px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;     /* keskitys vaakasuunnassa */
-    padding: 20px;
+    padding: 10px;
 }
 
 /******************************************
@@ -40,8 +46,7 @@ KOKO SIVUN GRID (KAIKKI SIVUT)
 
 .header {
     grid-area: header;
-    /* background-color: rgb(90, 46, 126)   ; */ 
-    padding: 20px;
+    padding: 0px;
     margin: 0 auto; 
     text-align: center;
 }
@@ -56,18 +61,23 @@ KOKO SIVUN GRID (KAIKKI SIVUT)
     NAVIT (KAIKKI SIVUT)
 *******************************************/
 
-
 .nav {
     grid-area: nav;
-    padding: 20px;
-    margin: 0 auto;
+    padding: 3px;
+    background-color: darkgreen;
+    margin: 0;
+    text-align: center;
 }
 
 .nav a {
+    display: inline-block;
+    color: lightgreen;
     text-decoration: none;
+    padding: 15px 10px;
 }
 .nav a:hover {
     color: darkorange;
+    background-color: lightgreen;
 }
 
 /******************************************
@@ -87,8 +97,14 @@ KOKO SIVUN GRID (KAIKKI SIVUT)
 
 .article-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 600px), 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .article-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /******************************************
@@ -107,6 +123,16 @@ KOKO SIVUN GRID (KAIKKI SIVUT)
 
 .card h3 {
     margin-bottom: 20px;
+}
+
+.contact-list {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 10px 15px;
+}
+
+.contact-list dd {
+    margin: 0;
 }
 
 .card ol {
