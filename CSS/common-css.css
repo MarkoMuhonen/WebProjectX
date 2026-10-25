@@ -97,8 +97,12 @@ KOKO SIVUN GRID (KAIKKI SIVUT)
 }
 
 .hero {
-    display:grid;
+    display: grid;
     gap: 20px;
+}
+
+.hero .card {
+    max-width: none;
 }
 
 
