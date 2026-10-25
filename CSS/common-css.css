@@ -15,6 +15,10 @@ body {
     }
 }
 
+/******************************************
+KOKO SIVUN GRID (KAIKKI SIVUT)
+*******************************************/
+
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -30,6 +34,10 @@ body {
     padding: 20px;
 }
 
+/******************************************
+    HEADER (KAIKKI SIVUT)
+*******************************************/
+
 .header {
     grid-area: header;
     /* background-color: rgb(90, 46, 126)   ; */ 
@@ -44,6 +52,11 @@ body {
     height: auto;
 }
 
+/******************************************
+    NAVIT (KAIKKI SIVUT)
+*******************************************/
+
+
 .nav {
     grid-area: nav;
     padding: 20px;
@@ -56,6 +69,10 @@ body {
 .nav a:hover {
     color: darkorange;
 }
+
+/******************************************
+    MAIN (KAIKKI SIVUT)
+*******************************************/
 
 
 .main {
@@ -73,6 +90,10 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 600px), 1fr));
     gap: 20px;
 }
+
+/******************************************
+    SISÄLTÖKORTIT (KAIKKI SIVUT)
+*******************************************/
 
 .card {
     background-color: rgb(214, 224, 206);
@@ -92,6 +113,10 @@ body {
     margin-left: 20px;
 }
 
+/******************************************
+    SIDEBAR (KAIKKI SIVUT)
+*******************************************/
+
 
 /* Mietitään käytetäänkö
 .sidebar {
@@ -100,6 +125,12 @@ body {
     padding: 20px;
 } */
 
+
+/******************************************
+    FOOTER (KAIKKI SIVUT)
+*******************************************/
+
+
 .footer {
     grid-area: footer;
     padding: 20px;
@@ -107,6 +138,11 @@ body {
     gap: 20px;
     text-align: center;
 }
+
+/******************************************
+    YLEISTÄ (KAIKKI SIVUT)
+*******************************************/
+
 
 /* Useampi elementti saa saman tyylin */
 h1,
@@ -121,13 +157,6 @@ p {
     font-size: 18px;
 }
 
-/* class selektori */
-.esittely {
-    color: rgb(141, 67, 18);
-    font-size: 1.3rem;
-    /* 1.3 kertaa oletusfontin koko */
-    font-style: italic;
-}
 
 /* jos href alkaa https ^ jos loppuu $ */
 a[href^="https"] {
