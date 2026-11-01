@@ -64,6 +64,7 @@ KOKO SIVUN GRID (KAIKKI SIVUT)
     background-color: darkgreen;
     margin: 0;
     text-align: center;
+    border-radius: 5px;
 }
 
 .nav a {
@@ -71,6 +72,12 @@ KOKO SIVUN GRID (KAIKKI SIVUT)
     color: lightgreen;
     text-decoration: none;
     padding: 15px 10px;
+}
+
+.nav a.active {
+    color: yellow;
+    background-color: rgb(113, 172, 101);
+    border-radius: 8px;
 }
 .nav a:hover {
     color: darkorange;
