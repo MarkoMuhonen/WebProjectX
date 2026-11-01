@@ -9,10 +9,7 @@ body {
     /* background-color: rgb(14, 131, 14); */
     background-color: rgb(238, 241, 234);
     width: 100%;
-    a {
-        color: rgb(29, 28, 28);
-        text-decoration: none;
-    }
+  
 }
 
 /******************************************
@@ -32,7 +29,7 @@ KOKO SIVUN GRID (KAIKKI SIVUT)
     1fr
     auto;
     
-    min-height: 20vh;
+    min-height: 100vh;
     gap: 20px;
     width: 100%;
     max-width: 800px;
@@ -187,7 +184,6 @@ KOKO SIVUN GRID (KAIKKI SIVUT)
     grid-area: footer;
     padding: 20px;
     margin: 0;
-    gap: 20px;
     text-align: center;
 }
 
