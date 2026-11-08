@@ -105,7 +105,8 @@ KOKO SIVUN GRID (KAIKKI SIVUT)
     gap: 20px;
 }
 
-.hero .card {
+.hero .card,
+.hero .card-hero {
     max-width: none;
 }
 
@@ -114,6 +115,10 @@ KOKO SIVUN GRID (KAIKKI SIVUT)
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
+}
+
+.contact-cards {
+    grid-template-columns: 1fr;
 }
 
 @media (max-width: 600px) {
@@ -129,77 +134,59 @@ KOKO SIVUN GRID (KAIKKI SIVUT)
 /* KORTIT HORI(Zontal) ja VER(tical)  */
 
 
-.card-hori {
+.card,
+.card-hero {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
     gap: 1rem;
-
     background-color: rgb(214, 224, 206);
     border: 1px solid #222;
     border-radius: 6px;
-    padding: 15px;
+    padding: 20px;
     width: 100%;
     max-width: 800px;
     justify-self: center;
 }
 
-.card-hori h3 {
-    margin-bottom: 20px;
+
+.card h3 {
+    margin: 0;
 }
 
-.card-hori img {
+.card img {
+    grid-column: 1;
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-hero img {
+    grid-column: 1;
     width: 100%;
-    height: auto;
-}
-
-.card-ver {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 150px;
-    gap: 1rem;
-
-    background-color: rgb(214, 224, 206);
-    border: 1px solid #222;
-    border-radius: 6px;
-    padding: 15px;
-    width: 100%;
-    max-width: 800px;
-    justify-self: center;
-}
-
-.card-ver h3 {
-    grid-column: 1 / -1;
-    margin-bottom: 20px;
-}
-
-.card-ver img {
-    grid-column: 2;
-    grid-row: 2;
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    
+    object-fit: cover;
+    object-position: center;
 }
 
 @media (max-width: 400px) {
+       
     .card {
         grid-template-columns: 1fr;
     }
 
     .card img {
         grid-column: 1;
-        grid-row: 3;
     }
 }
 
-/* KESKITETTY - KORTTI 
-.card.middle {
-    text-align: center;
-}
-*/
-
 .article-date {
     display: block;
-    margin-bottom: 12px;
+    margin: 0;
     color: rgb(75, 61, 61);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-style: italic;
 }
 
